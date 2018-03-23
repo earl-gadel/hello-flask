@@ -1,4 +1,5 @@
 from flask import Flask, request
+import vigenere
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -23,7 +24,7 @@ def index():
 @app.route("/hello", methods=["post"])
 def hello():
     first_name = request.form["first_name"]
-    return "<h1>Hello, "+ first_name + "</h1>"
+    return vigenere("first_name")
 
 
 app.run()
