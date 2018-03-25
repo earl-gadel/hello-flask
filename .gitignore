@@ -3,3 +3,5 @@
 .vs/hello-flask/v15/.suo
 .vs/VSWorkspaceState.json
 .vs/
+__pycache__/vigenere.cpython-36.pyc
+__pycache__/helpers.cpython-36.pyc
